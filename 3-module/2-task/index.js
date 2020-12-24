@@ -1,11 +1,13 @@
 /**
- * @param {number[]} arr
- * @param {number} a
- * @param {number} b
- * @returns {number[]}
+ * Пример работы числового фильтра.
+ * Нужно отфильтровать массив по заданному диапазону
+ * 
+ * в стрелочной функции - действие с каждым 
+ * элементом массива
  */
 function filterRange(arr, a, b) {
-  return arr.filter((num) => {
-    return a <= num && num <= b;
-  });
+  return arr.filter((elArr) => {
+                    return a <= elArr && elArr <= b
+                   })
 }
+console.log(filterRange([1,2,3,5,10], 1, 5))
